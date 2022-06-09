@@ -30,7 +30,7 @@ function App() {
             ? [...inputValue.values, tmp.values]
             : [...inputValue.values],
           lastInput: target.title,
-          outputValue: inputValue.outputValue + target.value,
+          outputValue: inputValue.outputValue + " " + target.value + " ",
         });
         if (tmp.operator) setOperator(tmp.operator);
         setTmp({ values: "", operator: target.value });
